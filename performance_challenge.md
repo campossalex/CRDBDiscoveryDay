@@ -7,10 +7,10 @@ Steps:
 1. Load the movr database
 
 ```
-cockroach workload init movr --drop --num-histories 250000  \
---num-promo-codes 250000 --num-rides 125000 --num-users 12500  \
---num-vehicles 3750  \
-"postgresql://craig:cockroach@<YOUR_CLUSTER_DNS>:26257"
+cockroach workload init movr --drop  \
+    --num-histories 250000 --num-promo-codes 250000 --num-rides 125000  \
+    --num-users 12500 --num-vehicles 3750  \
+    "postgresql://craig:cockroach@<YOUR_CLUSTER_DNS>:26257"
 ```
 
 Once the movr database is loaded, find a user that have more than 5 records in the `users` table.
