@@ -19,10 +19,25 @@ Once the movr database is loaded, find a user that have more than 5 records in t
 SELECT name, COUNT(*) FROM users GROUP BY name HAVING COUNT(*) > 5;
 ```
 
+Sample query result:  
+
+         name         | count
+----------------------+--------
+  Michael Smith       |     9
+  David Smith         |     7
+  David Johnson       |     6
+  Michael Davis       |     8
+  Jennifer Williams   |     6
+  Christopher Johnson |     7
+  Joseph Johnson      |     6
+
+Copy any `name` column value to be used in the following queryies.  
+
 2. Optimize following workload.
 
-SELECT * FROM users WHERE name = 'Cheyenne Smith';
-
+```
+SELECT * FROM users WHERE name = '<name_value_here>';  
+```
 
 
 SELECT name, credit_card FROM users WHERE name = 'Cheyenne Smith';
