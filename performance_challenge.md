@@ -21,6 +21,7 @@ SELECT name, COUNT(*) FROM users GROUP BY name HAVING COUNT(*) > 5;
 
 Sample query result:  
 
+```
          name         | count
 ----------------------+--------
   Michael Smith       |     9
@@ -30,6 +31,7 @@ Sample query result:
   Jennifer Williams   |     6
   Christopher Johnson |     7
   Joseph Johnson      |     6
+```
 
 Copy any `name` column value to be used in the following queryies.  
 
