@@ -2,9 +2,9 @@
 
 Goal: improve query performance
 
-Steps:
+## Load sample data  
 
-1. Load the movr database
+Before running the workloads, load the movr sample database following these steps:  
 
 ```
 cockroach workload init movr --drop  \
@@ -36,7 +36,7 @@ Sample query result:
 Copy any `name` column value, that be used in the following queries.  Suggestion: pick the user with the highest cardinality.   
 Now it is time to run and optimize some workloads.   
 
-2. Optimize following Workload A.
+## Workload A
 
 ```
 SELECT * FROM users WHERE name = '<name_value_here>';  
