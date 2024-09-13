@@ -33,7 +33,7 @@ Sample query result:
   Joseph Johnson      |     6
 ```
 
-Copy any `name` column value, that be used in the following queries.  Suggestion: pick the user with the highest cardinality.  
+Copy any `name` column value, that be used in the following queries.  Suggestion: pick the user with the highest cardinality.   
 Now it is time to run and optimize some workloads.   
 
 2. Optimize following Workload A.
@@ -41,6 +41,8 @@ Now it is time to run and optimize some workloads.
 ```
 SELECT * FROM users WHERE name = '<name_value_here>';  
 ```
+The first execute time can vary from 4 to 9 ms. Reduce that execution time.   
+💡 Use the EXPLAIN statement to understand the query plan and spot optimization opportunties.  
 
 3. Optimize following Workload B.
 
