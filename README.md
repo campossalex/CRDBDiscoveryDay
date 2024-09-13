@@ -22,4 +22,4 @@ Before you start with the challenges, make sure you have access to DB Console an
 
 ## Challenges
 
-. [Performance Challenge](/blob/main/performance_challenge.md)
+* [Performance Challenge](https://github.com/campossalex/CRDBGameGay/blob/main/performance_challenge.md)
