@@ -41,16 +41,22 @@ Now it is time to run and optimize some workloads.
 ```
 SELECT * FROM users WHERE name = '<name_value_here>';  
 ```
-The first execute time can vary from 4 to 9 ms. Reduce that execution time.   
+The time of the first execution spans from 4 to 9 ms. Reduce that execution time.   
+
 💡 Use the EXPLAIN statement to understand the query plan and spot optimization opportunties.  
 
-3. Optimize following Workload B.
+## Workload B
 
 ```
 SELECT name, credit_card FROM users WHERE name = '<name_value_here>'; 
 ```
+The time of the first execution spans from 4 to 9 ms. Reduce that execution time.   
 
-4. Optimize following Workload C.
+💡 Use the EXPLAIN statement to understand the query plan and spot optimization opportunties.  
+💡 Use DROP INDEX <index_name> if you need to recreate and index.   
+
+
+## Workload C
 
 ```
 EXPLAIN SELECT  \  
