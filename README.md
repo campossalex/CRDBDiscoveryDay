@@ -20,6 +20,11 @@ Before you start with the challenges, make sure you have access to DB Console an
 
 4. Click Apply.
 
+## SQL Client
+
+You can use any SQL client of your choice, like Datagrip or DBeaver. The only requirements is to use Postres jdbc/odbc to connect to CRDB cluster.  
+CockroackDB provides a shell client binary that you can install in Mac, Linux or Windows. Refer to the following [documentation](https://www.cockroachlabs.com/docs/stable/cockroach-sql-binary) to install CRDB sql client.
+
 ## Challenges
 
 * [Performance Challenge](https://github.com/campossalex/CRDBGameGay/blob/main/performance_challenge.md)
