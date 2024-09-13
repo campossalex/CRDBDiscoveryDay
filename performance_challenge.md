@@ -33,7 +33,7 @@ Sample query result:
   Joseph Johnson      |     6
 ```
 
-Copy any `name` column value, that be used in the following queries.  
+Copy any `name` column value, that be used in the following queries.  Suggestion: pick the user with the highest cardinality.  
 Now it is time to run and optimize some workloads.   
 
 2. Optimize following Workload A.
