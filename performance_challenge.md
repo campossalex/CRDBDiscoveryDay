@@ -43,7 +43,7 @@ SELECT * FROM users WHERE name = '<name_value_here>';
 ```
 The time of the first execution spans from 4 to 9 ms. Reduce that execution time.   
 
-💡 Use the `EXPLAIN` statement to understand the query plan and spot optimization opportunties.  
+💡 Use the `EXPLAIN` statement to understand the query plan and find out optimization opportunities.  
 
 ## Workload B
 
@@ -52,7 +52,7 @@ SELECT name, credit_card FROM users WHERE name = '<name_value_here>';
 ```
 The time of the first execution spans from 4 to 9 ms. Reduce that execution time.   
 
-💡 Use the `EXPLAIN` statement to understand the query plan and spot optimization opportunties.  
+💡 Use the `EXPLAIN` statement to understand the query plan and find out optimization opportunities.  
 💡 Use `DROP INDEX <index_name>` if you need to recreate and index.   
 
 
@@ -68,3 +68,4 @@ LIMIT 10;
 ```
 The time of the first execution spans from 40 to 100 ms. Reduce that execution time.   
 
+💡 Use the `EXPLAIN` statement to understand the query plan and find out optimization opportunities.  
