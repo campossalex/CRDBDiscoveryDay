@@ -1,6 +1,6 @@
 # Welcome to CockroachDB Game Gay
 
-## Netoworking setup
+## Networking setup
 
 Before you start with the challenges, make sure you have access to DB Console and sql endpoint.
 
