@@ -33,24 +33,34 @@ Sample query result:
   Joseph Johnson      |     6
 ```
 
-Copy any `name` column value to be used in the following queryies.  
+Copy any `name` column value, that be used in the following queries.  
+Now it is time to run and optimize some workloads.   
 
-2. Optimize following workload.
+2. Optimize following Workload A.
 
 ```
 SELECT * FROM users WHERE name = '<name_value_here>';  
 ```
 
+3. Optimize following Workload B.
 
-SELECT name, credit_card FROM users WHERE name = 'Cheyenne Smith';
+```
+SELECT name, credit_card FROM users WHERE name = '<name_value_here>'; 
+```
 
-DROP INDEX users_name_idx;
+4. Optimize following Workload C.
 
-CREATE INDEX ON users (name) STORING (credit_card);
-
-
-Using EXPLAIN statement, find optimization opportunities to improve performance
-Three workloads to improve:
-Select * with a WHERE condition
-Select two columns with a WHERE condition
-Execute a JOIN statement of two tables
+```
+EXPLAIN SELECT  \  
+    name, count(rides.id) AS sum  \  
+FROM  \  
+    users JOIN rides ON users.id = rides.rider_id  \  
+WHERE  \  
+    rides.start_time BETWEEN '2018-12-31 00:00:00' AND '2020-01-01 00:00:00'  \  
+GROUP BY  \  
+    name  \  
+ORDER BY  \  
+    sum DESC  \  
+LIMIT  \  
+    10;  \  
+```
