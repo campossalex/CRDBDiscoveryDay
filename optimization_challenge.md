@@ -1,4 +1,4 @@
-# Optimization Chllange
+# Optimization Challange
 
 Goal: distribute table ranges to avoid hot spots
 
