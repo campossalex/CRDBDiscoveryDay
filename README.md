@@ -28,3 +28,6 @@ CockroackDB provides a shell client binary that you can install in Mac, Linux or
 ## Challenges
 
 * [Performance Challenge](https://github.com/campossalex/CRDBGameGay/blob/main/performance_challenge.md)
+* [Integration Challenge](https://github.com/campossalex/CRDBGameGay/blob/main/integration_challenge.md)
+* [Resilience Challenge](https://github.com/campossalex/CRDBGameGay/blob/main/resilience_challenge.md)
+* [Optimization Challenge](https://github.com/campossalex/CRDBGameGay/blob/main/optimization_challenge.md)
