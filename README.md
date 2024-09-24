@@ -14,11 +14,17 @@ Before you start with the challenges, make sure you have access to DB Console an
 
 3. From the Network dropdown, select **Current Network** to auto-populate your local machine's IP address:
 
+   If you are using an Instruqt machine to connect to your cluster, please run the following command in the CLI to get the machine Public IP address:
+
+   ```
+   curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'
+   ```
+
    <img width="539" alt="Screenshot 2024-09-13 at 11 05 17" src="https://github.com/user-attachments/assets/f4972220-a32d-4504-9f51-9fd28305cb55">
 
    Make sure to mark both cluster's **DB Console to monitor the cluster** and **CockroachDB Client to access databases** options.
 
-4. Click Apply.
+5. Click Apply.
 
 ## SQL Client
 
