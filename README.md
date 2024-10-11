@@ -1,4 +1,4 @@
-# Welcome to CockroachDB Game Gay
+# Welcome to CockroachDB Discovery Gay
 
 ## Networking setup
 
