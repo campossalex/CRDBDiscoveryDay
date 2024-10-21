@@ -1,4 +1,4 @@
-# Performance Chllange
+# Performance Challenge
 
 Goal: improve query performance
 
