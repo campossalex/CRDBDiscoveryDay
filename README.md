@@ -46,9 +46,11 @@ CockroackDB provides a shell client binary that you can install in Mac, Linux or
 
 On Cockroach Cloud, you can follow the instructions to connect using the IP Allowlist you just configured. Go to top-right corner, button Connect to open the instructions dialog.  
 
-## Challenges
+## Challenges  
 
+You can access the challenges guidelines here:  
+
+* [Scalability Challenge](https://github.com/campossalex/CRDBDiscoveryDay/blob/main/scalability_challenge.md)
 * [Performance Challenge](https://github.com/campossalex/CRDBGameGay/blob/main/performance_challenge.md)
 * [Integration Challenge](https://github.com/campossalex/CRDBGameGay/blob/main/integration_challenge.md)
 * [Resilience Challenge](https://github.com/campossalex/CRDBGameGay/blob/main/resilience_challenge.md)
-* [Optimization Challenge](https://github.com/campossalex/CRDBGameGay/blob/main/optimization_challenge.md)
