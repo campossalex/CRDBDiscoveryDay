@@ -35,8 +35,11 @@ Go to the your cluster in the Cockroach Cloud console. Make sure you are in the 
 
 In the Overview page, click on the `pencil` icon you can see in the `Region` section. This will open a new page to edit the cluster configuration.
 
+<img width="1073" alt="Screenshot 2024-10-22 at 04 27 33" src="https://github.com/user-attachments/assets/5dbdd715-1cd2-4118-a02a-0313bbf8f89e">
 
 In the `Nodes` dropmenu option, select 3 value. This will add two more nodes to your cluster. 
+
+<img width="791" alt="Screenshot 2024-10-22 at 04 27 55" src="https://github.com/user-attachments/assets/a73e8b3b-7a86-405b-918c-ac0babf7ddcc">
 
 ⚠️ Do not add a new Region. Just change from 1 to 3 the Nodes value.
 
@@ -44,7 +47,17 @@ On the right-hand side, click on `Next: Capacity` button and move to the Capacit
 
 Do not make any changes on the Capacity section, click on `Update Cluster` to finsh the scale up configuration. So easy, right?
 
-Now the cluster will be in the process to add the two additional nodes. You can on the Overview page the two nodes being added.
+Your cluster will be in `Maintenance` mode to process the scale up and add the two additional nodes. 
+
+<img width="539" alt="Screenshot 2024-10-22 at 04 32 42" src="https://github.com/user-attachments/assets/e538465f-70a5-4c13-8210-4bb8e1c6f578">
+
+⚠️ The scale up process will take from 4 to 6 minutes to finish.  
+
+While the the cluster is scaling up, check the following:  
 
 💡 Use the DB Console to monitor the scale up process.  
 💡 Check the workload you are running in `_Terminal` and observe if the workload was stopped while scaling up the cluster.  
+
+When the scale up process is finished, you can see the two added nodes, indicating 3/3 live nodes.
+
+<img width="537" alt="Screenshot 2024-10-22 at 04 37 04" src="https://github.com/user-attachments/assets/09d43667-90d0-4f85-99fe-d5b1430dcc64">
