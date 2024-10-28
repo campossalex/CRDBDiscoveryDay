@@ -4,9 +4,9 @@ Goal: stream data changes to a Kafka topic.
 
 Kafka cluster information:  
 
-- Control Center web console: [Confluent Control Center](http://18.117.101.240:9021/clusters/cJ2ocmjVSFOA5y71ezdpIw/overview)  
+- Control Center web console: [Confluent Control Center](http://18.216.213.38:9021/clusters/cJ2ocmjVSFOA5y71ezdpIw/overview)  
   Once in Control Center, click `Topics` on the left-hand side menu.  
-- Kafka Ip Address Listerner: 18.117.101.240  
+- Kafka Ip Address Listerner: 18.216.213.38  
 - Kafka Port: 9092
 
 Table `movr.vehicle_location_histories`. This table is already create from the previous challenge.  
