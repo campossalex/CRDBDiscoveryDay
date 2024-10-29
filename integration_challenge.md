@@ -9,7 +9,16 @@ Kafka cluster information:
 - Kafka Ip Address Listerner: 18.216.213.38  
 - Kafka Port: 9092
 
-Table `movr.vehicle_location_histories`. This table is already create from the previous challenge.  
+Before streaming data to Kafka, load the movr sample database following these steps:  
+
+```
+cockroach workload init movr --drop  \
+    --num-histories 250000 --num-promo-codes 250000 --num-rides 125000  \
+    --num-users 12500 --num-vehicles 3750  \
+    "postgresql://craig:cockroach@<YOUR_CLUSTER_DNS>:26257"
+```
+
+The source table we will use is  `movr.vehicle_location_histories`.  
 
 💡 Use the following tips to send data to Kafka.  
 
