@@ -39,7 +39,7 @@ cd go_application
 
 Run the Go application. Change <YOUR_CLUSTER_DNS> value for your actual cluster DNS:  
 ```
-go run main.go -url "postgresql://craig:cockroach@<YOUR_CLUSTER_DNS>:26257/default"
+go run main.go -url "postgresql://craig:cockroach@<YOUR_CLUSTER_DNS>:26257/defaultdb"
 ```
 
 You will start to see something like this:  
@@ -52,7 +52,7 @@ b681fb41 -> fe2259dd took 200ms
 847b3986 -> 0fd897c8 took 198ms
 ```
 
-The Go application will create a table called `account` in `default` database with some initial recods, and randomly will transfer money from one account to other.  
+The Go application will create a table called `account` in `defaultdb` database with some initial recods, and randomly will transfer money from one account to other.  
 
 Now it is time to see and play with Resilience.  
 
