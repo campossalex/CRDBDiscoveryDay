@@ -6,7 +6,7 @@ Goal: run a workload while scaling up the cluster
 ## Run a workload  
 
 CockroachDB binaries includes samples workloads to facilitates benchmarking and stress tests. To see how the databases behaviors during a scale up operation, run the `bank` workload. 
-Copy the command and paste it in the `_Terminal` tab in Instruqt. Replace the <YOUR_CLUSTER_DNS> value:  
+Copy the command and paste it in the `_Workload` tab in Instruqt. Replace the <YOUR_CLUSTER_DNS> value:  
 
 ```
 cockroach workload run bank --duration 15m --drop "postgresql://craig:cockroach@<YOUR_CLUSTER_DNS>:26257" --method simple_protocol --min-conns 500
