@@ -1,4 +1,4 @@
-# Welcome to CockroachDB Discovery Gay
+# Welcome to CockroachDB Discovery Day
 
 ## Networking setup
 
